@@ -12,7 +12,7 @@ def palindrome_check(input_string)
 end
 def main_execute
 	loop do	
-		input_string = take_input.downcase
+		input_string = take_input
 		regex = /^[qQ]$/
 		case input_string
 		when regex
