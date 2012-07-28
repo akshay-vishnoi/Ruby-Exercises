@@ -6,11 +6,11 @@ def character_count(input_string)
 
   input_string.each_char do |v|
     case v
-      when /[a-z]/
+      when ('a'..'z')
         lowercase_count += 1
-      when /[A-Z]/
+      when ('A'..'Z')
         uppercase_count += 1
-      when /\d/
+      when ('1'..'9')
         digit_count += 1
       else 
         special_character_count += 1
