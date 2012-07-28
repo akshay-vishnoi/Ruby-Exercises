@@ -1,8 +1,3 @@
-def take_input
-  puts "Enter the input string:"
-  gets.chomp.downcase
-end
-
 def occurence_inhash(input_string)
   @occurences = Hash.new(0)
   input_string.each_char do |answer_alpha|
@@ -19,6 +14,7 @@ def show_output
 end
 
 #main
-input_string = take_input
+puts "Enter the input string:"
+input_string = gets.chomp.downcase
 occurence_inhash(input_string)
 show_output

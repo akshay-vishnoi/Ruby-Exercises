@@ -1,11 +1,11 @@
 require_relative '../lib/inverse_string'
 
-def take_input
-  puts "Enter the string"
-  gets.chomp
-end
 
-inverse_string = InverseString.new(take_input)
+puts "Enter the string"
+input_string = gets.chomp
+
+
+inverse_string = InverseString.new(input_string)
 puts inverse_string
 
 
