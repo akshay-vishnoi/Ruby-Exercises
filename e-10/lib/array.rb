@@ -4,11 +4,12 @@ class Array
     for i in self
       hash[i.to_s.length] += [i]
     end
-    puts hash
-    ha = Hash.new
-    ha["even"] = hash.inject{|a,b| }
-
-    puts ha
-
+    outputHash = hash.inject({}) do |result, (k, v)|
+      key = k.to_i%2 == 0 ? "even" : "odd"
+      result[key] = [] if result[key].nil?
+      result[key] << v
+      result
+      end
+    puts outputHash
   end
 end
