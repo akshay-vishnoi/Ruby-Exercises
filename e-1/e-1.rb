@@ -1,7 +1,7 @@
 def occurence_inhash(input_string)
   @occurences = Hash.new(0)
   input_string.each_char do |answer_alpha|
-    @occurences[answer_alpha.to_sym] += 1
+    @occurences[answer_alpha.to_sym] += 1 if answer_alpha != " "
   end
 end
 
