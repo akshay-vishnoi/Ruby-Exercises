@@ -1,18 +1,15 @@
 def compute_fibo(limit)
-  puts "The Fibonacci Series upto #{limit} is: "
-  puts @first_ele = 0
-  puts @second_ele = 1
   loop do
-    result = @first_ele + @second_ele
-    puts yield result
-    @first_ele = @second_ele
-    @second_ele = result
+    @b = yield @a, @a + @b
   end
 end
 
 #main
-compute_fibo(limit = 1000) {|n| break if (n > limit) 
-n}
-
-
-
+@a = 0
+@b = 1
+puts "Fibonacci series upto 1000 is: "
+compute_fibo(limit = 1000) { |a, b| break if a > limit
+@a = b
+puts a
+a
+}
