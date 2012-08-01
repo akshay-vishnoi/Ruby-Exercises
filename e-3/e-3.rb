@@ -1,5 +1,5 @@
 def replace(input_string, replace_with)
-  regex = /[aeiouAEIOU]/
+  regex = /[aeiou]/i
   puts input_string.gsub(regex, replace_with)
 end
 
