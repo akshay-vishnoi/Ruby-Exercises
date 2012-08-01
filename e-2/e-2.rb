@@ -1,4 +1,5 @@
-def compute_fibo
+def compute_fibo(limit)
+  puts "The Fibonacci Series upto #{limit} is: "
   puts @first_ele = 0
   puts @second_ele = 1
   loop do
@@ -10,8 +11,8 @@ def compute_fibo
 end
 
 #main
-compute_fibo {|n| break if (n > 1000) 
+compute_fibo(limit = 1000) {|n| break if (n > limit) 
 n}
-puts "The Fibonacci Series upto 1000 is:"
+
 
 
