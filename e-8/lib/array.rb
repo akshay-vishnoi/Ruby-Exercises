@@ -1,5 +1,6 @@
 class Array
-  def power(exponent)
-    puts self.fill{|i| self[i]**exponent}
+  def power!(exponent)
+    print self.fill{|i| self[i]**exponent}
+    puts
   end
 end
