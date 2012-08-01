@@ -1,8 +1,9 @@
 class Customer
-@@account_no = 1
+@@account_no = 0
   def initialize(name)
     @name = name
     @balance = 1000
+    @@account_no += 1
     @account_no = @@account_no
   end
 
