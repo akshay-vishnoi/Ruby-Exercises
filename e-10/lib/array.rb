@@ -6,7 +6,7 @@ class Array
     end
     outputHash = hash.inject({}) do |result, (k, v)|
       key = k.to_i%2 == 0 ? "even" : "odd"
-      result[key] = [] if result[key].nil?
+      result[key] ||= []
       result[key] << v
       result
       end

@@ -10,7 +10,7 @@ def character_count(input_string)
         lowercase_count += 1
       when ('A'..'Z')
         uppercase_count += 1
-      when ('1'..'9')
+      when ('0'..'9')
         digit_count += 1
       else 
         special_character_count += 1
