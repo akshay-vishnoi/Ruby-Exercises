@@ -1,7 +1,7 @@
 require 'time'
 require_relative '../lib/sum_time'
 
-@regex = /^([0-1]?\d)|(2?[0-3]):[0-5]?\d:[0-5]?\d$/
+@regex = /^(([0-1]?\d)|(2?[0-3])):[0-5]?\d:[0-5]?\d$/
 print "The number of times:"
 times_count = gets.chomp.to_i
 time = Array.new
