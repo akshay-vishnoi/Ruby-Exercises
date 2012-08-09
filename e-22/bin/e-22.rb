@@ -9,4 +9,3 @@ last_name = gets.chomp.strip
 name = Name.new(first_name, last_name)
 
 puts name
-
