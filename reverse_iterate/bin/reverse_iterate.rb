@@ -1,7 +1,7 @@
 class Array
   def reverse_iterate
     self.each_index do |i|
-      yield self[self.length - (i + 1)]
+      yield self[self.length - i - 1]
     end
     puts
   end
